@@ -33,8 +33,10 @@ body {
   margin: auto;
 }
 
+/* Media queries */
+
 .section-info {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .section-info h1 {
@@ -137,4 +139,32 @@ footer {
 footer a {
   text-decoration: none;
   color: var(--DarkBlue);
+}
+
+@media screen and (min-width: 1120px) {
+  .container {
+    display: flex;
+    width: min-content;
+  }
+  .section-form form {
+    width: 54.0rem;
+  }
+
+  .section-form .content-info-form {
+    height: 60px;
+  }
+
+  .section-info {
+    min-width: 54.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+  }
+
+  .section-info h1 {
+    font-size: 4.8rem;
+    padding: 0;
+    margin: 0 0 3rem 0;
+  }
 }
