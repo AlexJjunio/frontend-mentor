@@ -135,6 +135,17 @@ button:hover {
 footer {
   text-align: center;
   padding-bottom: 1.8rem;
+  color: var(--White);
+  margin: 0 2rem 0 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.personal-date ::-webkit-input-placeholder {
+  color: var(--DarkBlue);
+  font-weight: bolder;
 }
 
 
@@ -145,6 +156,7 @@ footer {
     justify-content: center;
     text-align: center;
     gap: 1.8rem;
+    margin: 1rem;
   }
   .section-info {
     margin: 0;
@@ -154,6 +166,7 @@ footer {
 @media (max-width: 530px) {
   .container {
     max-width: 33.0rem;
+    margin: 1rem;
   }
 
   .section-info h1 {
