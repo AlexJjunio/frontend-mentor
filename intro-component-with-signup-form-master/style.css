@@ -33,18 +33,25 @@ body {
 .container {
   margin: 5rem;
 
-  max-height: 51.0rem;
   align-self: center;
   justify-self: center;
-  border: 1px solid red;
 
   display: flex;
 }
 
 .section-info {
-  max-width: 54.0rem;
-  border: 1px solid red;
+  max-width: 57.0rem;
+  color: var(--White);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5rem;
 }
+
+.section-info h1 {
+  font-size: 4.8rem;
+}
+
 
 .content-info-form {
   text-align: center;
@@ -65,7 +72,7 @@ body {
 }
 
 .section-form {
-  max-width: 57.0rem;
+  max-width: 54.0rem;
 }
 
 .section-form form {
@@ -124,3 +131,38 @@ button {
 button:hover {
   background: var(--GreenHover);
 } 
+
+footer {
+  text-align: center;
+  padding-bottom: 1.8rem;
+}
+
+
+@media (max-width: 1100px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 1.8rem;
+  }
+  .section-info {
+    margin: 0;
+  }
+}
+
+@media (max-width: 530px) {
+  .container {
+    max-width: 33.0rem;
+  }
+
+  .section-info h1 {
+    font-size: 2.72rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .section-info p {
+    line-height: 3rem;
+    margin: 0 1.0rem 1.8rem;
+  }
+}
