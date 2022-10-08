@@ -157,9 +157,14 @@ a {
     text-align: center;
     gap: 1.8rem;
     margin: .5rem;
+    max-width: 54rem;
   }
   .section-info {
     margin: 0;
+  }
+
+  footer {
+    margin-top: 1.8rem;
   }
 }
 
