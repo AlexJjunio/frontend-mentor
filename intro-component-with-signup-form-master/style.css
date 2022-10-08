@@ -109,6 +109,25 @@ input {
   border-radius: 1rem;
 }
 
+small {
+  display: block;
+  color: var(--Red);
+  text-align: end;
+  padding-right: 2rem;
+  padding-top: .8rem;
+}
+
+.personal-date {
+  position: relative;
+  border: 1px solid blue;
+}
+
+.img-error {
+  position: absolute;
+  top: 1.6rem;
+  right: 2rem;
+}
+
 button {
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;

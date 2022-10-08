@@ -25,18 +25,26 @@
 
         <div class="personal-date">
           <input placeholder="First name" id="first-name" type="text">
+          <small>First Name cannot be empty</small>
+          <img class="img-error" src="images/icon-error.svg" alt="">
         </div>
 
         <div class="personal-date">
           <input placeholder="Last name" id="last-name" type="text">
+          <small>Last Name cannot be empty</small>
+          <img class="img-error" src="images/icon-error.svg" alt="">
         </div>
 
         <div class="personal-date">
           <input placeholder="Email address" id="email-address" type="email">
+          <small>Email cannot be empty</small>
+          <img class="img-error" src="images/icon-error.svg" alt="">
         </div>
 
         <div class="personal-date">
           <input required minlength="8" placeholder="Password" id="password" type="password">
+          <small>Password cannot be empty</small>
+          <img class="img-error" src="images/icon-error.svg" alt="">
         </div>
 
         <button type="submit">Claim your free trial</button>
@@ -50,5 +58,6 @@
   <footer>
     <p>Challenge by <a href="#">Frontend Mentor</a>. Coded by <a target="_blank" href="https://github.com/AlexJjunio">Alex Junio</a>.</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
