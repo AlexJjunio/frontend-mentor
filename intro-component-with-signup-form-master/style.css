@@ -214,3 +214,7 @@ a {
     margin-top: 1.8rem;
   }
 }
+
+.hide {
+  display: none;
+}
