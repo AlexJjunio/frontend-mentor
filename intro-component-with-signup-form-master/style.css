@@ -219,6 +219,10 @@ a {
   display: none;
 }
 
-img {
-  display: none;
+.active {
+  display: block;
+  border-radius: 0 0 1rem 1rem;
+  background-color: rgba(255, 0, 0, 0.2);
+  background: linear-gradient(to top, rgba(255, 0, 0, 0.2), white );
+  padding: 0.4rem;
 }

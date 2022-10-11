@@ -1,36 +1,120 @@
-document.querySelector('form').addEventListener('submit', function(event) {
-  event.preventDefault()
-  console.log('Form enviado')
-})
+const fields = document.querySelectorAll("[required]")
 
-const fields = document.querySelectorAll('[required]')
+
+
+
+
+
+
+
+
+
 
 for (let field of fields) {
-  field.addEventListener('invalid', customValidation)
+  field.addEventListener("invalid", customValidation)
+  field.addEventListener("blur", customValidation)
 }
 
+
 function customValidation(event) {
+  event.preventDefault()
   const field = event.target
 
-  function verifyErrors() {
+  function verifyErrors (){ 
     let foundError = false;
 
-    for(let error in field.validity){
-      if(error != "customError" && field.validity[error]) {
+    for (let error in field.validity) {
+      if(field.validity[error] && !field.validity.valid) {
         foundError = error
       }
     }
-    return foundError;
+    return foundError
   }
+
   const error = verifyErrors()
-  console.log(error)
+  console.log("Error Exists: ", error)
+
+  const spanError = field.parentNode.querySelector(".spanError")
+  const imgError = field.parentNode.querySelector(".img-error")
 
   if(error) {
-    field.setCustomValidity('Ops! preencha esse campo corretamente')
+    imgError.classList.remove("hide")
+    spanError.classList.add("active")
+    spanError.innerHTML = "Campo obrigatório"
   } else {
-    field.setCustomValidity('')
+    imgError.classList.add("hide")
+    spanError.classList.remove("active")
+    spanError.innerHTML = ""
   }
 
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+document.querySelector("form").addEventListener("submit", event => {
+  event.preventDefault()
+  console.log("Enviado.")
+})
