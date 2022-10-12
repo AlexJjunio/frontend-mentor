@@ -60,6 +60,22 @@ function ValidateField(field) {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function customValidation(event) {
   const field = event.target
   const validation = ValidateField(field)
